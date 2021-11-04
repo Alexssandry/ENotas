@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Notas</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<form action="{{url_for('salvar_notas')}}" method="post">
+			Título: {{input_titulo|safe}}
+			<br><br>
+			Descrição: {{input_descricao|safe}}
+			<br><br>
+			<input type="submit" value="Criar/Carregar" />
+		</form>
+		<p>OBS: Para criar uma nota favor preencher o campo Título e Descrição,
+		para modificar alguma nota basta preencher apenas o título
+		para carregar a nota e então modificar a descrição.</p>
+	</body>
+</html>
